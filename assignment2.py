@@ -5,7 +5,11 @@ import datetime
 
 def downloadData(url):
     """Downloads the data"""
-    pass
+
+print('Now downloading with urllib2...')
+url = 'https://s3.amazonaws.com/cuny-is211-spring2015/birthdays100.csv'
+urllib.request.urlretrieve(url, 'Downloads/birthdays100.csv')
+pass
 
 def processData(file_content):
     pass
